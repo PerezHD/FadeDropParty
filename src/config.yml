@@ -1,0 +1,46 @@
+#
+# FadeDropParty Configuration.
+#
+
+messages:
+      # The message sent to the player when they type /dp on
+      toggleOn: '&7[&3FadeDP&7] &aYou will now recieve items from the drop party.'
+      # The message sent to the player when they type /dp off
+      toggleOff: '&7[&3FadeDP&7] &cYou will no longer recieve items from the drop party.'
+      # The messages broadcasted when the DP starts
+      dpStartMessage: 
+      - '&4******************************************************'
+      - ' '
+      - '&eThe server hit &b&n[VOTES]&r &evotes.'
+      - '&aThe &a&nDrop Party&r&a has &a&nstarted&r&a!'
+      - ' '
+      - '&4******************************************************'
+      # The message broadcasted when the DP ends.
+      dpEndMessage:
+      - '&4******************************************************'
+      - ' '
+      - '&aThe &a&nDrop Party&r&a has &c&nended&r&a!'
+      - '&eThe server needs &b&n[VOTES]&r &evotes to start another &e&nDropParty&r&e.'
+      - ' '
+      - '&4******************************************************'
+      # The message broadcasted when a warning internal hits.
+      warningMessage: '&7[&3FadeDP&7] &e&n[VOTES] &r&emore votes are needed for the DP to start.'
+      
+# Warning intervals
+# Example: When the server hits 50 votes it will say 50 more are needed if the votes needed is 100.
+warningIntervals: [100, 50, 25, 10, 5, 4, 3, 2, 1]
+
+# How many votes are needed to start the DP.
+votesNeeded: 100
+
+# How long should the DP be in seconds?
+dpLengthSeconds: 60
+
+rewards:
+      diamondSword:
+            # This is out of 100.
+            # Example: If set to 10, 1 in 10 chance of it happening.
+            chance: 10
+            # The command to execute if the player gets this reward.
+            commands:
+            - 'give {playername} diamond_sword 1'

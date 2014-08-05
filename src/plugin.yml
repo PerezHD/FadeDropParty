@@ -1,0 +1,8 @@
+name: FadeDropParty
+authors: [harry5573]
+version: 1.0-SNAPSHOT
+description: Dynamic voting drop party plugin for FadeCloud.
+main: com.fadecloud.dropparty.FadeDropParty
+commands:
+      dp:
+            description: Main dropparty command.
