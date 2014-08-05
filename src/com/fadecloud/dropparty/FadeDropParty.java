@@ -244,21 +244,21 @@ public class FadeDropParty extends JavaPlugin implements Listener, CommandExecut
                   cancel();
             }
       }
-      
+
       private DropPartyReward getRandomReward() {
             int total = 0;
-            
+
             List<DropPartyReward> items = new ArrayList<>();
-            
+
             for (DropPartyReward item : this.rewards) {
                   items.add(item);
                   total += item.chance;
             }
-            
-            int r = Math.max(1, random.nextInt(total));
-            int count = 0;
+
+            double r = Math.max(1, random.nextInt(total));
+            double count = 0;
             int i = 0;
-            
+
             while (count < r) {
                   count += items.get(i++).chance;
             }
